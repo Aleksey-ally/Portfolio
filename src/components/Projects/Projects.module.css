@@ -1,14 +1,14 @@
-.myProjectsContainer {
+.projectsContainer {
   flex-direction: column;
   padding-bottom: 62px;
 }
 
-.myProjectsContainer:before {
+.projectsContainer:before {
   content: "";
   background: #121415;
   width: 100%;
   height: 1px;
-  margin: 33px 0 62px 0;
+  margin: 40px 0 100px 0;
 }
 
 .projects {
@@ -16,4 +16,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+
+  .projects {
+    justify-content: center;
+  }
+
 }
