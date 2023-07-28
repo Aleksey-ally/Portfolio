@@ -1,4 +1,4 @@
-import s from './Title.module.css';
+import s from './Title.module.scss';
 
 type TitleType = {
   subtitle: string

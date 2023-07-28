@@ -1,4 +1,4 @@
-import s from './Main.module.css';
+import s from './Main.module.scss';
 import styleContainer from '../../common/styles/Container.module.css';
 
 export const Main = () => {

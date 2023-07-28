@@ -44,10 +44,10 @@ span, p {
   color:#c4cfde;
 }
 
-/* 
-h1, h2 , h3 , h4 , h5, h6, p, span, text {
-  line-height:1.9;
-} */
+a{
+  color: #c4cfde;
+  text-decoration: none;
+}
 
 
 
