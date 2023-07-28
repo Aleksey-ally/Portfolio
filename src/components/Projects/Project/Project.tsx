@@ -1,5 +1,4 @@
 import s from './Project.module.css';
-import { ReactComponent as Icon } from '../../../assets/svg/externalLink.svg';
 
 type WorkType = {
   imgSrc: string;
