@@ -1,0 +1,38 @@
+@import '../../../common/styles/sass/variables.scss';
+
+.skillContainer {
+  margin-top: 50px;
+
+  .skill {
+    max-width: 400px;
+    text-align: left;
+    padding: 35px 50px 35px 50px;
+    border-radius: 10px;
+    height: 100%;
+    background: $bgColor;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+
+    .iconBox {
+      margin-bottom: 29px;
+
+      .icon {
+        max-height: 50px;
+        max-width: 50px;
+      }
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: $textColor;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 22px;
+    }
+  }
+}

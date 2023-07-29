@@ -1,4 +1,4 @@
-import s from './Skills.module.css';
+import s from './Skills.module.scss';
 import styleContainer from '../../common/styles/Container.module.css';
 import { Skill } from './Skill/Skill';
 import { Title } from '../../common/components/title/Title';
@@ -7,7 +7,7 @@ export const Skills = () => {
   return (
     <div className={s.skillsBlock}>
       <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-        <div className={s.titleContainer}><Title subtitle="Features" title="Skills"/></div>
+        <div className={s.titleContainer}><Title subtitle="Features" title="Skills" /></div>
         <div className={s.skills}>
           <Skill
             title="React"
@@ -21,14 +21,14 @@ export const Skills = () => {
             title="REST API"
             description="MobX is a state management library for JavaScript applications. It provides a simple and scalable way to manage the state of your application and keep it in sync with the user interface."
           />
-           <Skill
+          <Skill
             title="Redux"
             description="MobX is a state management library for JavaScript applications. It provides a simple and scalable way to manage the state of your application and keep it in sync with the user interface."
-          /> 
+          />
           <Skill
-          title="Mobx"
-          description="MobX is a state management library for JavaScript applications. It provides a simple and scalable way to manage the state of your application and keep it in sync with the user interface."
-        />
+            title="Mobx"
+            description="MobX is a state management library for JavaScript applications. It provides a simple and scalable way to manage the state of your application and keep it in sync with the user interface."
+          />
         </div>
       </div>
     </div>

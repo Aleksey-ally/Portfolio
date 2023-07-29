@@ -1,5 +1,5 @@
 import { Title } from '../../common/components/title/Title';
-import s from './Contacts.module.css';
+import s from './Contacts.module.scss';
 import styleContainer from '../../common/styles/Container.module.css';
 
 
