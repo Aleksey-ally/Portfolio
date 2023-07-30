@@ -5,27 +5,28 @@
 }
 
 @font-face {
-	font-family: Montserrat;
-	src: url('./assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf')
+  font-family: Montserrat;
+  src: url('./assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf')
 }
 
 @font-face {
-	font-family: PoppinsRegular;
-	src: url('./assets/fonts/poppins/Poppins-Regular.ttf')
+  font-family: PoppinsRegular;
+  src: url('./assets/fonts/poppins/Poppins-Regular.ttf')
 }
 
 @font-face {
-	font-family: PoppinsMedium;
-	src: url('./assets/fonts/poppins/Poppins-Medium.ttf')
+  font-family: PoppinsMedium;
+  src: url('./assets/fonts/poppins/Poppins-Medium.ttf')
 }
 
 @font-face {
-	font-family: PoppinsLight;
-	src: url('./assets/fonts/poppins/Poppins-Light.ttf')
+  font-family: PoppinsLight;
+  src: url('./assets/fonts/poppins/Poppins-Light.ttf')
 }
 
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 60px;
   font-weight: 700;
@@ -38,16 +39,17 @@ h3 {
   font-family: 'PoppinsMedium', sans-serif;
 }
 
-
-span, p {
-  font-family: 'PoppinsRegular', sans-serif;
-  color:#c4cfde;
+span {
+  font-family: 'Montserrat', sans-serif;
+  color: #c4cfde;
 }
 
-a{
+p {
+  font-family: 'PoppinsRegular', sans-serif;
+  color: #c4cfde;
+}
+
+a {
   color: #c4cfde;
   text-decoration: none;
 }
-
-
-

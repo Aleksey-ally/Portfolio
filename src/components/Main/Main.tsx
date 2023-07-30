@@ -5,7 +5,7 @@ export const Main = () => {
   return (
     <div className={s.mainBlock}>
       <div className={`${styleContainer.container} ${s.mainContainer}`}>
-        <div className={s.text}>
+        <div className={s.textWrapper}>
           <span className={s.subtitle}>Welcome everyone</span>
           <h1 className={s.title}>Hi, I’m <span className={s.name}>Aleksey Fedorov</span> <br /> a Frontend Developer.</h1>
           <p className={s.description}>I have experience

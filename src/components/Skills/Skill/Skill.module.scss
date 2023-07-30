@@ -1,4 +1,5 @@
 @import '../../../common/styles/sass/variables.scss';
+@import '../../../common/styles/sass/mixins.scss';
 
 .skillContainer {
   margin-top: 50px;
@@ -22,17 +23,12 @@
     }
 
     .title {
+      @include text(24px, 32px, 20px, $textColor );
       font-weight: 500;
-      font-size: 24px;
-      line-height: 32px;
-      color: $textColor;
-      margin-bottom: 20px;
     }
 
     .description {
-      font-size: 16px;
-      line-height: 28px;
-      margin-bottom: 22px;
+      @include text( 16px, 28px, 22px );
     }
   }
 }

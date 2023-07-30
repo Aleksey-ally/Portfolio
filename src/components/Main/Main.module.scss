@@ -1,12 +1,13 @@
 @import '../../common/styles/sass/variables.scss';
+@import '../../common/styles/sass/mixins.scss';
 .mainContainer {
-  padding: 24px 0px 60px 0px;
+  padding: 24px 0 60px 0;
 
   @media screen and (max-width: 1036px) {
     flex-direction: column-reverse;
   }
 
-  .text {
+  .textWrapper {
     display: flex;
     width: 60.863%;
     padding: 10px;
@@ -20,7 +21,6 @@
 
   .subtitle {
     display: block;
-    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 3px;
@@ -29,10 +29,7 @@
   }
 
   .title {
-    color: $TextColorSecond;
-    font-size: 60px;
-    line-height: 62px;
-    margin-bottom: 22px;
+    @include text( 60px, 62px, 22px, $TextColorSecond );
 
     @media screen and (max-width: 1237px) {
       font-size: 50px;
@@ -59,7 +56,6 @@
 
   .name {
     color: $primaryColor;
-    font-family: 'Montserrat', sans-serif;
   }
 
   .description {
