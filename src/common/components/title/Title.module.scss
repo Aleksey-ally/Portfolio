@@ -1,14 +1,11 @@
 @import '../../../common/styles/sass/variables.scss';
+@import '../../../common/styles/sass/mixins.scss';
 .titleContainer {
   text-align: center;
 
   .subtitle {
     display: block;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 14px;
-    color: $TextColorThird;
+    @include text(null, 14px, 14px, null, $TextColorThird, 400, 1px );
     text-transform: uppercase;
   }
 

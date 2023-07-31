@@ -23,12 +23,12 @@
     }
 
     .title {
-      @include text(24px, 32px, 20px, $textColor );
+      @include text(null, 24px, 32px, 20px, $textColor );
       font-weight: 500;
     }
 
     .description {
-      @include text( 16px, 28px, 22px );
+      @include text(null, 16px, 28px, 22px);
     }
   }
 }

@@ -81,8 +81,7 @@
       padding-bottom: 10px;
 
       .title {
-        font-family: "PoppinsLight", sans-serif;
-        @include text(12px, null, null, $primaryColor, 100, 1px);
+        @include text(("PoppinsLight", sans-serif), 12px, null, null, $primaryColor, 100, 1px);
         text-transform: uppercase;
         padding: 0;
       }
@@ -90,9 +89,9 @@
 
     .description {
       position: relative;
-      font-family: "Montserrat", sans-serif;
-      @include text(23px, 34px, null, null, 600, null);
+      @include text(("Montserrat", sans-serif), 23px, 34px, null, null, 600, null);
       transition: color 0.5s ease-in-out;
+
       &:hover {
         color: $primaryColor;
       }

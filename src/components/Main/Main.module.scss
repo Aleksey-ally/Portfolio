@@ -22,12 +22,12 @@
 
   .subtitle {
     display: block;
-    @include text(14px, null, 20px, null, 500, 3px);
+    @include text(null, 14px, null, 20px, null, 500, 3px);
     text-transform: uppercase;
   }
 
   .title {
-    @include text(60px, 62px, 22px, $TextColorSecond );
+    @include text(null, 60px, 62px, 22px, $TextColorSecond );
 
     @media screen and (max-width: 1237px) {
       font-size: 50px;
