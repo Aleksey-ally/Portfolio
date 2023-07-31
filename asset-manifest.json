@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.16855473.css",
-    "main.js": "/Portfolio/static/js/main.3ab60ed7.js",
+    "main.css": "/Portfolio/static/css/main.cfb8d980.css",
+    "main.js": "/Portfolio/static/js/main.f5fd06a0.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/Portfolio/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
+    "static/media/Poppins-Light.ttf": "/Portfolio/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-Regular.ttf": "/Portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/Portfolio/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/TodoList.png": "/Portfolio/static/media/TodoList.af4d01e95340b5150fed.png",
+    "static/media/SocialNetwork.jpg": "/Portfolio/static/media/SocialNetwork.09a6affbe940b926b646.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.16855473.css.map": "/Portfolio/static/css/main.16855473.css.map",
-    "main.3ab60ed7.js.map": "/Portfolio/static/js/main.3ab60ed7.js.map",
+    "static/media/externalLink.svg": "/Portfolio/static/media/externalLink.1d1a3af53e19fe920602.svg",
+    "main.cfb8d980.css.map": "/Portfolio/static/css/main.cfb8d980.css.map",
+    "main.f5fd06a0.js.map": "/Portfolio/static/js/main.f5fd06a0.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16855473.css",
-    "static/js/main.3ab60ed7.js"
+    "static/css/main.cfb8d980.css",
+    "static/js/main.f5fd06a0.js"
   ]
 }
