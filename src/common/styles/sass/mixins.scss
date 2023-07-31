@@ -1,9 +1,11 @@
 @import 'variables.scss';
 
-@mixin text ($fontSize, $lineHeight, $marginBottom, $color:null) {
+@mixin text ($fontSize, $lineHeight: null, $marginBottom: null, $color: null, $fontWeight: null, $letterSpacing: null) {
     font-size: $fontSize;
     line-height: $lineHeight;
-    margin-bottom:$marginBottom;
+    margin-bottom: $marginBottom;
     color: $color;
+    font-weight: $fontWeight;
+    letter-spacing: $letterSpacing;
 
 }

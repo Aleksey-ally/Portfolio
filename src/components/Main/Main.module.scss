@@ -1,5 +1,6 @@
 @import '../../common/styles/sass/variables.scss';
 @import '../../common/styles/sass/mixins.scss';
+
 .mainContainer {
   padding: 24px 0 60px 0;
 
@@ -21,15 +22,12 @@
 
   .subtitle {
     display: block;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 3px;
+    @include text(14px, null, 20px, null, 500, 3px);
     text-transform: uppercase;
-    margin-bottom: 20px;
   }
 
   .title {
-    @include text( 60px, 62px, 22px, $TextColorSecond );
+    @include text(60px, 62px, 22px, $TextColorSecond );
 
     @media screen and (max-width: 1237px) {
       font-size: 50px;
