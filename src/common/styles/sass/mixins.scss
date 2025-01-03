@@ -9,3 +9,16 @@
     font-weight: $fontWeight;
     letter-spacing: $letterSpacing;
 }
+
+@mixin container () {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+@mixin flex ($flexDirection:null, $justifyContent:null, $alignItems:null, $flexWrap:null){
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-wrap: $flexWrap;
+}

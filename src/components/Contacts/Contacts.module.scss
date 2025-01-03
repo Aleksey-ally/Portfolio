@@ -1,32 +1,30 @@
+@import '../../common/styles/sass/mixins.scss';
+
 .contactsBlock {
+  @include container();
+  @include flex(column, null, center, wrap);
+  padding-bottom: 113px;
 
-  .contactsContainer {
+  &::before {
+    content: "";
+    background: #121415;
+    width: 100%;
+    height: 1px;
+    margin: 33px 0 64px 0;
+  }
+
+  .contactForm form {
+    min-height: 300px;
+    min-width: 100%;
+    display: flex;
     flex-direction: column;
-    padding-bottom: 113px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    &::before {
-      content: "";
-      background: #121415;
-      width: 100%;
-      height: 1px;
-      margin: 33px 0 64px 0;
-    }
-
-    .contactForm form {
-      min-height: 300px;
-      min-width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .contactForm textarea,
-    input {
-      width: 100%;
-    }
-
-
+  .contactForm textarea,
+  input {
+    width: 100%;
   }
 
   & button {

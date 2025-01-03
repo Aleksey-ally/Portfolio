@@ -1,10 +1,9 @@
 import s from './Main.module.scss';
-import styleContainer from '../../common/styles/Container.module.css';
 
 export const Main = () => {
   return (
     <div className={s.mainBlock}>
-      <div className={`${styleContainer.container} ${s.mainContainer}`}>
+      <div className={s.mainContainer}>
         <div className={s.textWrapper}>
           <span className={s.subtitle}>Welcome everyone</span>
           <h1 className={s.title}>Hi, I’m <span className={s.name}>Aleksey Fedorov</span> <br /> a Frontend Developer.</h1>

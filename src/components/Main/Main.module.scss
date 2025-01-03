@@ -2,6 +2,8 @@
 @import '../../common/styles/sass/mixins.scss';
 
 .mainContainer {
+  @include container();
+  @include flex(null, center, space-between, wrap);
   padding: 24px 0 60px 0;
 
   @media screen and (max-width: 1036px) {

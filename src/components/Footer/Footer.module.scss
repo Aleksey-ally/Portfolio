@@ -1,5 +1,8 @@
-.footerContainer {
-  flex-direction: column;
+@import '../../common/styles/sass/mixins.scss';
+
+.footerBlock {
+  @include container();
+  @include flex(column, null, center, wrap);
   padding-bottom: 80px;
 
   &::before {

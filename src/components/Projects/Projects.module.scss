@@ -1,6 +1,10 @@
-.projectsContainer {
+@import '../../common/styles/sass/mixins.scss';
+
+.projectsBlock {
   flex-direction: column;
   padding-bottom: 62px;
+  @include container();
+  @include flex(null, null, null, wrap);
 
   &:before {
     content: "";
