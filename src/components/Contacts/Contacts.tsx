@@ -1,17 +1,30 @@
 import s from './Contacts.module.scss';
 import {Title} from "common/components/title/Title";
 
-
 export const Contacts = () => {
     return (
         <div className={s.contactsBlock}>
-            <Title subtitle="Contact" title="Contact With Me"/>
-            <div className={s.contactForm}>
-                <form action="#">
-                    <input type="text"/>
-                    <input type="text"/>
-                    <textarea name="" id="" cols={30} rows={10}></textarea>
-                    <button type='submit'>Send</button>
+            <Title className={s.title} subtitle="Contact" title="Contact With Me"/>
+            <div className={s.formContainer}>
+                <form className={s.form}>
+                    <div className={s.inputGroup}>
+                        <label htmlFor="name">Your Name</label>
+                        <input type="text" id="name" name="name"/>
+                    </div>
+
+                    <div className={s.inputGroup}>
+                        <label htmlFor="email">Email</label>
+                        <input type="email" id="email" name="email"/>
+                    </div>
+
+                    <div className={s.inputGroup}>
+                        <label htmlFor="message">Your Message</label>
+                        <textarea id="message" name="message"  rows={5}></textarea>
+                    </div>
+
+                    <button type="submit" className={s.submitButton}>
+                        <span>Send Message</span>
+                    </button>
                 </form>
             </div>
         </div>

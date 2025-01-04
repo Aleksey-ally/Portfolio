@@ -2,7 +2,7 @@
 
 .contactsBlock {
   @include container();
-  @include flex(column, null, center, wrap);
+  @include flex(column, null, null, wrap);
   padding-bottom: 113px;
 
   &::before {
@@ -11,29 +11,89 @@
     width: 100%;
     height: 1px;
     margin: 33px 0 64px 0;
+
   }
 
-  .contactForm form {
-    min-height: 300px;
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  .title{
+    margin-bottom: 40px;
   }
 
-  .contactForm textarea,
-  input {
-    width: 100%;
-  }
+  .formContainer {
+    @include boxShadow();
+    padding: 20px;
+    background-color: $primaryBgColor;
+    border-radius: $borderRadius;
+    width: 600px;
+    margin: 0 auto;
 
-  & button {
-    align-items: center;
-    font-weight: bold;
-    font-size: large;
-    height: 50px;
-    max-width: 150px;
-    width: 100%;
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .inputGroup {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          @include text(("PoppinsLight", sans-serif), 12px, null, null, #a0a8b3, 600, 1px);
+          text-transform: uppercase;
+          margin-bottom: 14px;
+        }
+
+        input,
+        textarea {
+          background-color: #1b1b1b;
+          color: $textColor;
+          padding: 10px;
+          font-size: 14px;
+          border: none;
+          border-radius: $borderRadius;
+          outline: 2px solid #191b1e;
+
+          &:focus {
+            transition: 0.4s;
+            outline-color: $primaryColor;
+          }
+
+        }
+
+        textarea {
+          resize: none;
+        }
+      }
+
+    }
+
+    .submitButton {
+      @include boxShadow();
+      background: linear-gradient(145deg, #1e2024, #23272b);
+      border: none;
+      padding: 10px;
+      border-radius: $borderRadius;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 0.4s;
+      outline: none;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      &:focus {
+        background: #191b1e;
+      }
+
+      span {
+        @include text(("PoppinsMedium", sans-serif), 16px, null, null, $textColor);
+      }
+    }
   }
 
 }
+
+
+
+
+
+

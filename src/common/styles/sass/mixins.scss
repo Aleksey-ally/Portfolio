@@ -1,24 +1,28 @@
 @import 'variables.scss';
 
-@mixin text ($fontFamily:null, $fontSize:null, $lineHeight: null, $marginBottom: null, $color: null, $fontWeight: null, $letterSpacing: null) {
-    font-family:$fontFamily;
-    font-size: $fontSize;
-    line-height: $lineHeight;
-    margin-bottom: $marginBottom;
-    color: $color;
-    font-weight: $fontWeight;
-    letter-spacing: $letterSpacing;
+@mixin text($fontFamily:null, $fontSize:null, $lineHeight: null, $marginBottom: null, $color: null, $fontWeight: null, $letterSpacing: null) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  margin-bottom: $marginBottom;
+  color: $color;
+  font-weight: $fontWeight;
+  letter-spacing: $letterSpacing;
 }
 
-@mixin container () {
-    max-width: 1320px;
-    margin: 0 auto;
+@mixin container() {
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
-@mixin flex ($flexDirection:null, $justifyContent:null, $alignItems:null, $flexWrap:null){
-    display: flex;
-    flex-direction: $flexDirection;
-    justify-content: $justifyContent;
-    align-items: $alignItems;
-    flex-wrap: $flexWrap;
+@mixin flex($flexDirection:null, $justifyContent:null, $alignItems:null, $flexWrap:null) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $flexWrap;
+}
+
+@mixin boxShadow() {
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }

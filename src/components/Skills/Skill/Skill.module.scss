@@ -5,13 +5,13 @@
   margin-top: 50px;
 
   .skill {
+    @include boxShadow();
     max-width: 400px;
     text-align: left;
     padding: 35px 50px 35px 50px;
     border-radius: 10px;
     height: 100%;
-    background: $bgColor;
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    background: $bgGradient;
 
     .iconBox {
       margin-bottom: 29px;

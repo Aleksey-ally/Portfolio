@@ -6,7 +6,7 @@ import {Title} from "common/components/title/Title";
 
 export const Projects = () => {
     return (
-        <div className={s.projectsBlock}>
+        <div id={'projects'} className={s.projectsBlock}>
             <Title subtitle="Visit my projects" title="Projects"/>
             <div className={s.projects}>
                 <Project

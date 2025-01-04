@@ -74,6 +74,7 @@
     width: 38.469%;
 
     .thumbnail::before {
+      @include boxShadow();
       position: absolute;
       z-index: -1;
       width: 100%;
@@ -83,7 +84,6 @@
       bottom: 0;
       transform: translateX(-50%);
       background: linear-gradient(145deg, #1e2024, #23272b);
-      box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
       border-radius: 6px;
     }
 
