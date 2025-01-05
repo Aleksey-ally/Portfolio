@@ -3,7 +3,7 @@
 .contactsBlock {
   @include container();
   @include flex(column, null, null, wrap);
-  padding-bottom: 113px;
+  padding-bottom: 22px;
 
   &::before {
     content: "";
