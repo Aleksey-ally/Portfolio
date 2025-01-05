@@ -1,7 +1,9 @@
 import s from './Contacts.module.scss';
+import '../../common/styles/sass/variables.scss';
 import {Title} from "common/components/title/Title";
 import axios from "axios"
 import {SubmitHandler, useForm} from "react-hook-form";
+import {toast, ToastContainer} from "react-toastify";
 
 type formValues = {
     name: string
@@ -19,8 +21,18 @@ export const Contacts = () => {
 
     const onSubmit: SubmitHandler<formValues> = (data) => {
         axios.post('https://smtp-backend-pearl.vercel.app/sendMessage', {data})
-            .then(() => alert("Your message has been sent"))
-            .catch((error) => alert(error))
+            .then(() => toast("Your message has been sent", {
+                style: {background: '#191c20'},
+                type: "success",
+                position: "bottom-right"
+            }))
+            .catch((error) => toast(error.message || error,
+                {
+                    style: {background: '#191c20'},
+                    type: "error",
+                    position: "bottom-right"
+                })
+            )
     }
 
     return (
@@ -50,6 +62,7 @@ export const Contacts = () => {
                     </button>
                 </form>
             </div>
+            <ToastContainer/>
         </div>
     );
 };
