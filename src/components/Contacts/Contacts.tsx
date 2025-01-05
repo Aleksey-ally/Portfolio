@@ -20,16 +20,20 @@ export const Contacts = () => {
     const {
         register,
         handleSubmit,
-        formState: {errors}
+        formState: {errors},
+        reset
     } = useForm<formValues>()
 
     const onSubmit: SubmitHandler<formValues> = (data) => {
         axios.post('https://smtp-backend-pearl.vercel.app/sendMessage', {data})
-            .then(() => toast("Your message has been sent", {
-                style: {background: '#191c20'},
-                type: "success",
-                position: "bottom-right"
-            }))
+            .then(() => {
+                toast("Your message has been sent", {
+                    style: {background: '#191c20'},
+                    type: "success",
+                    position: "bottom-right"
+                })
+                reset()
+            })
             .catch((error) => toast(error.message || error,
                 {
                     style: {background: '#191c20'},
