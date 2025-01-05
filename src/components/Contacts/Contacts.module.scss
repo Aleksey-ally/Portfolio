@@ -14,28 +14,34 @@
 
   }
 
-  .title{
+  .title {
     margin-bottom: 40px;
   }
 
-  .formContainer {
-    @include boxShadow();
-    padding: 20px;
-    background-color: $primaryBgColor;
-    border-radius: $borderRadius;
-    width: 600px;
-    margin: 0 auto;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
 
     .form {
       display: flex;
       flex-direction: column;
       gap: 20px;
 
+      @include boxShadow();
+      padding: 20px;
+      background-color: $primaryBgColor;
+      border-radius: $borderRadius;
+      width: 600px;
+      margin: 0 auto;
+
       .inputGroup {
         display: flex;
         flex-direction: column;
 
-        .error{
+        .error {
           color: red;
           font-size: 0.875rem;
           margin-top: 6px;
@@ -95,6 +101,45 @@
         @include text(("PoppinsMedium", sans-serif), 16px, null, null, $textColor);
       }
     }
+
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      p {
+        color: $textColor;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      span {
+        color: $TextColorSecond;
+        font-size: 28px;
+      }
+
+      .socialICons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+
+        img {
+          width: 64px;
+          height: 64px;
+
+          &:hover {
+            transform: translateY(-5px);
+            filter: hue-rotate(10deg);
+          }
+        }
+
+      }
+    }
+
   }
 
 }
