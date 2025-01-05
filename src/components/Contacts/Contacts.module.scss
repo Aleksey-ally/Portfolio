@@ -35,6 +35,13 @@
         display: flex;
         flex-direction: column;
 
+        .error{
+          color: red;
+          font-size: 0.875rem;
+          margin-top: 6px;
+          display: block;
+        }
+
         label {
           @include text(("PoppinsLight", sans-serif), 12px, null, null, #a0a8b3, 600, 1px);
           text-transform: uppercase;

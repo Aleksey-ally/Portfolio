@@ -1,42 +1,48 @@
 import s from './Contacts.module.scss';
 import {Title} from "common/components/title/Title";
-import {FormEvent} from "react";
-import axios from "axios";
-import {Simulate} from "react-dom/test-utils";
-import error = Simulate.error;
+import axios from "axios"
+import {SubmitHandler, useForm} from "react-hook-form";
 
-const handleSubmit = (a: FormEvent<HTMLFormElement>) => {
-    a.preventDefault()
-    const form = a.currentTarget
-    const formData = new FormData(form);
-    const data: Record<string, string> = {};
-    formData.forEach((value, key) => {
-        data[key] = value.toString();
-    });
-    axios.post('https://smtp-backend-pearl.vercel.app/sendMessage', {data})
-        .then(()=>alert("Your message has been sent"))
-        .catch((error) => alert(error))
+type formValues = {
+    name: string
+    email: string
+    message: string
 }
 
+
 export const Contacts = () => {
+    const {
+        register,
+        handleSubmit,
+        formState: {errors}
+    } = useForm<formValues>()
+
+    const onSubmit: SubmitHandler<formValues> = (data) => {
+        axios.post('https://smtp-backend-pearl.vercel.app/sendMessage', {data})
+            .then(() => alert("Your message has been sent"))
+            .catch((error) => alert(error))
+    }
+
     return (
         <div className={s.contactsBlock}>
             <Title className={s.title} subtitle="Contact" title="Contact With Me"/>
             <div className={s.formContainer}>
-                <form className={s.form} onSubmit={handleSubmit}>
+                <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
                     <div className={s.inputGroup}>
                         <label htmlFor="name">Your Name</label>
-                        <input type="text" id="name" name="name"/>
+                        <input {...register("name")} type="text" id="name"/>
                     </div>
 
                     <div className={s.inputGroup}>
                         <label htmlFor="email">Email</label>
-                        <input type="email" id="email" name="email"/>
+                        <input {...register("email", {required: true})} type="email" id="email"/>
+                        {errors.email && <span className={s.error}>This field is required</span>}
                     </div>
 
                     <div className={s.inputGroup}>
                         <label htmlFor="message">Your Message</label>
-                        <textarea id="message" name="message" rows={5}></textarea>
+                        <textarea {...register("message", {required: true})} id="message" rows={5}></textarea>
+                        {errors.message && <span className={s.error}>This field is required</span>}
                     </div>
 
                     <button type="submit" className={s.submitButton}>
