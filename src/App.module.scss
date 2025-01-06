@@ -1,4 +1,6 @@
 @import 'common/styles/sass/variables.scss';
 .App{
-    background-color: $primaryBgColor
+    position: relative;
+    background-color: $primaryBgColor;
+    z-index: 9999;
 }
