@@ -1,13 +1,28 @@
+@import 'common/styles/sass/mixins';
+@import 'common/styles/sass/variables';
+
 .nav {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -24px;
-  a{
-    font-family: 'Montserrat', sans-serif;
-    font-weight:400;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -24px;
+    li {
+      @include text(('Montserrat', sans-serif), 13px, null, null, $textColor, 400);
+      list-style: none;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+
+      a:hover{
+        color: $primaryColor;
+      }
+
+      a.active{
+        color:#ffffff;
+      }
+      a.active:hover {
+        color: $primaryColor;
+      }
+    }
   }
 }
 

@@ -7,6 +7,7 @@ import {Projects} from 'components/Projects/Projects';
 import {Skills} from 'components/Skills/Skills';
 import {ParticlesBackground} from "components/ParticlesBackground/ParticlesBackground";
 import {Fade} from "react-awesome-reveal";
+import {Element} from "react-scroll";
 
 
 const App = () => {
@@ -14,14 +15,27 @@ const App = () => {
         <div className={s.App}>
             <ParticlesBackground/>
             <Header/>
-            <Main/>
+            <Element name={"Main"}>
+                <Main/>
+            </Element>
+
+
             <Fade direction={"top-left"} triggerOnce>
-                <Skills/>
+                <Element name={"Skills"}>
+                    <Skills/>
+                </Element>
             </Fade>
+
             <Fade direction={"down"} triggerOnce>
-                <Projects/>
-                <Contacts/>
+                <Element name={"Projects"}>
+                    <Projects/>
+                </Element>
+                <Element name={"Contacts"}>
+                    <Contacts/>
+                </Element>
+
                 <Footer/>
+
             </Fade>
         </div>
     );

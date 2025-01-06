@@ -1,13 +1,15 @@
 import s from 'components/Header/Nav/Nav.module.scss';
+import {Link} from "react-scroll";
 
 export const Nav = () => {
-  return (
-    <div className={s.nav}>
-      <a href="">Main</a>
-      <a href="">Skills</a>
-      <a href={"#projects"}>Project</a>
-      <a href="">Contacts</a>
-      <a href=""></a>
-    </div>
-  );
+    return (
+        <nav className={s.nav}>
+            <ul>
+                <li><Link to={"Main"} activeClass={s.active} spy={true} smooth={true} offset={-1}>Main</Link></li>
+                <li><Link to={"Skills"} activeClass={s.active} spy={true} smooth={true} offset={0}>Skills</Link></li>
+                <li><Link to={"Projects"} activeClass={s.active} spy={true} smooth={true} offset={1}>Projects</Link></li>
+                <li><Link to={"Contacts"} activeClass={s.active} spy={true} smooth={true} offset={1}>Contacts</Link></li>
+            </ul>
+        </nav>
+    );
 };
