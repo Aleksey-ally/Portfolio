@@ -6,6 +6,8 @@ import {Main} from 'components/Main/Main';
 import {Projects} from 'components/Projects/Projects';
 import {Skills} from 'components/Skills/Skills';
 import {ParticlesBackground} from "components/ParticlesBackground/ParticlesBackground";
+import {Fade} from "react-awesome-reveal";
+
 
 const App = () => {
     return (
@@ -13,10 +15,14 @@ const App = () => {
             <ParticlesBackground/>
             <Header/>
             <Main/>
-            <Skills/>
-            <Projects/>
-            <Contacts/>
-            <Footer/>
+            <Fade direction={"top-left"} triggerOnce>
+                <Skills/>
+            </Fade>
+            <Fade direction={"down"} triggerOnce>
+                <Projects/>
+                <Contacts/>
+                <Footer/>
+            </Fade>
         </div>
     );
 };
