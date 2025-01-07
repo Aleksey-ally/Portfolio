@@ -2,23 +2,29 @@
 @import 'common/styles/sass/variables';
 
 .nav {
-  ul{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  ul {
     display: flex;
     flex-wrap: wrap;
-    margin: -24px;
+    gap: 24px;
+
     li {
       @include text(('Montserrat', sans-serif), 13px, null, null, $textColor, 400);
       list-style: none;
       text-transform: uppercase;
-      padding: 0.5rem 1rem;
 
-      a:hover{
+      a:hover {
         color: $primaryColor;
+        cursor: pointer;
       }
 
-      a.active{
-        color:#ffffff;
+      a.active {
+        color: #ffffff;
       }
+
       a.active:hover {
         color: $primaryColor;
       }

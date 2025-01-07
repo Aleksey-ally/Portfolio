@@ -2,6 +2,7 @@ import s from './Skills.module.scss';
 import {Skill} from './Skill/Skill';
 import {Title} from "common/components/title/Title";
 import {Fade} from "react-awesome-reveal";
+import {ReactNode} from "react";
 
 type SkillsType = {
     title: string
@@ -40,7 +41,7 @@ export const Skills = () => {
                 <Fade cascade damping={0.2} direction={"top-left"} triggerOnce>
                     {skills.map((s, index) => {
                         return <Skill key={index} title={s.title} description={s.description}/>
-                    })}
+                    }) as ReactNode}
                 </Fade>
             </div>
 

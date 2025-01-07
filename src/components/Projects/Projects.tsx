@@ -4,6 +4,7 @@ import imgTodoList from '../../assets/images/TodoList.png'
 import imgSocialNetwork from '../../assets/images/SocialNetwork.jpg'
 import {Title} from "common/components/title/Title";
 import {Fade} from "react-awesome-reveal";
+import {ReactNode} from "react";
 
 type ProjectsType = {
     title: string
@@ -39,7 +40,7 @@ export const Projects = () => {
                 <Fade cascade={true} damping={0.2} direction={"top-left"} triggerOnce>
                     {projects.map((p, index) => {
                         return <Project key={index} title={p.title} description={p.description} imgSrc={p.imgSrc}/>
-                    })}
+                    }) as ReactNode}
                 </Fade>
 
             </div>

@@ -1,12 +1,15 @@
 import s from './Main.module.scss';
 import ReactTypingEffect from "react-typing-effect";
+import {useTranslation} from "react-i18next";
 
 export const Main = () => {
+    const {t} = useTranslation();
+//@ts-ignore
     return (
         <section className={s.mainBlock}>
             <div className={s.textWrapper}>
-                <span className={s.subtitle}>Welcome everyone</span>
-                <h1 className={s.title}>Hi, I’m <span className={s.name}>Aleksey Fedorov</span>
+                <span className={s.subtitle}>{t("mainBlock.welcome")}</span>
+                <h1 className={s.title}>{t("mainBlock.hi")}<span className={s.name}>{t("mainBlock.name")}</span>
                     <br/>
                     <ReactTypingEffect
                         className={s.title}
@@ -15,22 +18,13 @@ export const Main = () => {
                         typingDelay={1500}
                         eraseDelay={1500}
                         eraseSpeed={50}
-                        staticText={'a'}
-                        text={["Frontend Developer."]}
+                        staticText={t("mainBlock.a")}
+                        text={[t("mainBlock.profession")]}
                     />
                 </h1>
-                <p className={s.description}>I have experience
-                    in creating SPA with
-                    React, Redux, TypeScript.
-                    Now I am improving my
-                    skills in this direction and
-                    expanding them with new
-                    technologies. I spend my
-                    leisure time with educational
-                    books, solving tasks on
-                    Codewars and also improving
-                    my English. Open for your
-                    suggestions.</p>
+                <p className={s.description}>
+                    {t("mainBlock.aboutMe")}
+                </p>
             </div>
             <div className={s.wrapperPhoto}>
                 <div className={s.thumbnail}></div>

@@ -1,0 +1,26 @@
+@import 'common/styles/sass/variables';
+
+.languageSwitcher {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+
+  .button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .5;
+    }
+    &.active {
+      color:$primaryColor;
+    }
+  }
+
+  .divider {
+    color: #fff;
+  }
+}

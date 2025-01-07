@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "main": "Main",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contacts": "Contacts"
+  },
+  "mainBlock": {
+    "welcome": "Welcome everyone",
+    "hi": "Hi, I’m ",
+    "name": "Aleksey Fedorov",
+    "a": "a",
+    "profession": "Frontend Developer.",
+    "aboutMe": "I have experience in creating SPA with React, Redux, TypeScript. Now I am improving my skills in this direction and expanding them with new technologies. I spend my leisure time with educational books, solving tasks on Codewars and also improving my English. Open for your suggestions."
+  },
+  "skillsBlock": {
+    "subtitle": "Features",
+    "title": "Skills",
+    "skills": [
+      {
+        "title": "React",
+        "description": "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
+      },
+      {
+        "title": "ChatGPT",
+        "description": "ChatGPT is a conversational AI model developed by OpenAI based on the Generative Pretrained Transformer 3 (GPT-3) architecture."
+      },
+      {
+        "title": "REST API",
+        "description": "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
+      },
+      {
+        "title": "Redux",
+        "description": "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
+      },
+      {
+        "title": "Mobx",
+        "description": "MobX is a state management library for JavaScript applications. It provides a simple and scalable way to manage the state of your application and keep it in sync with the user interface."
+      }
+    ]
+  },
+  "projectsBlock": {
+    "subtitle": "Visit my projects",
+    "title": "Projects",
+    "projects": [
+      {
+        "title": "TodoList",
+        "description": "Stack: TypeScript, React, Redux toolkit, Redux-Thunk, React Router DOM, Axios, Formik, MUI, Storybook"
+      },
+      {
+        "title": "Social Network",
+        "description": "Stack: TypeScript, React, React Router DOM"
+      },
+      {
+        "title": "Cats",
+        "description": "Cats (also known as the domestic cat or house cat to distinguish it from other felids), is a small domesticated carnivorous mammal that is valued by humans for its companionship and its ability to hunt vermin and household pests."
+      }
+    ]
+  },
+  "contactBlock": {
+    "subtitle": "Contact",
+    "title": "Contact With Me",
+    "form": {
+      "name": "Your Name",
+      "email": "Email",
+      "message": "Your Message",
+      "button": "Send Message"
+    },
+    "info": "Or contact me in a way more convenient for you"
+  },
+  "footer": {
+    "info": "Designed and developed by Aleksey Fedorov 2025"
+  }
+}
