@@ -30,6 +30,19 @@
   .title {
     @include text(null, 60px, 62px, 22px, $TextColorSecond);
 
+    .typingCursor{
+      color:$primaryColor;
+      font-size: 100%;
+      font-weight: 500;
+    }
+
+    span {
+      @include text(null, 60px, 62px, 22px, $TextColorSecond);
+      @media screen and (max-width: 1237px) {
+        font-size: 50px;
+      }
+    }
+
     @media screen and (max-width: 1237px) {
       font-size: 50px;
     }
@@ -51,11 +64,12 @@
     @media screen and (max-width: 400px) {
       font-size: 24px;
     }
+    .name {
+      color: $primaryColor;
+    }
   }
 
-  .name {
-    color: $primaryColor;
-  }
+
 
   .description {
     color: $textColor;
