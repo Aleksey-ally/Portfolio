@@ -3,19 +3,15 @@
 
 .mainBlock {
   @include container();
-  @include flex(null, center, space-between, wrap);
+  @include flex(null, space-between, center, wrap);
   padding: 24px 0 60px 0;
   @media screen and (max-width: 1036px) {
     flex-direction: column-reverse;
   }
 
   .textWrapper {
-    display: flex;
-    width: 60.863%;
+    width: 65.999%;
     padding: 10px;
-    flex-direction: column;
-    flex-wrap: wrap;
-
     @media screen and (max-width: 1036px) {
       width: auto;
     }
@@ -28,47 +24,56 @@
   }
 
   .title {
-    @include text(null, 60px, 62px, 22px, $TextColorSecond);
+    @include text(null, 55px, 62px, 22px, $TextColorSecond);
 
-    .typingCursor{
-      color:$primaryColor;
+    .typingCursor {
+      color: $primaryColor;
       font-size: 100%;
       font-weight: 500;
     }
 
     span {
-      @include text(null, 60px, 62px, 22px, $TextColorSecond);
-      @media screen and (max-width: 1237px) {
+      @include text(null, 55px, 62px, 22px, $TextColorSecond);
+
+    }
+
+    .name {
+      @include text(null, 55px, 62px, 22px, $primaryColor);
+    }
+
+    &,
+    .title,
+    &.title span, {
+      @media screen and (max-width: 1302px) {
         font-size: 50px;
+      }
+
+      @media screen and (max-width: 1187px) {
+        font-size: 45px;
+      }
+
+      @media screen and (max-width: 1072px) {
+        font-size: 42px;
+      }
+
+      @media screen and (max-width: 1036px) {
+        line-height: 1.2;
+      }
+
+      @media screen and (max-width: 662px) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      @media screen and (max-width: 630px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 24px;
       }
     }
 
-    @media screen and (max-width: 1237px) {
-      font-size: 50px;
-    }
-
-    @media screen and (max-width: 1036px) {
-      line-height: 1.2;
-    }
-
-    @media screen and (max-width: 630px) {
-      font-size: 40px;
-      line-height: 50px;
-    }
-
-    @media screen and (max-width: 510px) {
-      font-size: 30px;
-      line-height: 40px;
-    }
-
-    @media screen and (max-width: 400px) {
-      font-size: 24px;
-    }
-    .name {
-      color: $primaryColor;
-    }
   }
-
 
 
   .description {
@@ -84,7 +89,7 @@
     align-content: flex-start;
     position: relative;
     z-index: 2;
-    width: 38.469%;
+    width: 33.333%;
 
     .thumbnail::before {
       @include boxShadow();
@@ -107,8 +112,9 @@
     }
 
     @media screen and (max-width: 1036px) {
-      width: 100%;
+      width: 98%;
       justify-content: center;
+      margin-bottom: 10px;
     }
   }
 

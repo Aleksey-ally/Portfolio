@@ -1,6 +1,7 @@
 import s from './Main.module.scss';
 import ReactTypingEffect from "react-typing-effect";
 import {useTranslation} from "react-i18next";
+import myPhoto from "assets/images/snapedit_1736348096872.png"
 
 export const Main = () => {
     const {t} = useTranslation();
@@ -29,7 +30,7 @@ export const Main = () => {
             <div className={s.wrapperPhoto}>
                 <div className={s.thumbnail}></div>
                 <img className={s.photo}
-                     src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/banner-01.png" alt="#"/>
+                     src={myPhoto} alt="myPhoto"/>
             </div>
         </section>
     );
