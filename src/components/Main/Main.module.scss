@@ -5,14 +5,14 @@
   @include container();
   @include flex(null, space-between, center, wrap);
   padding: 24px 0 60px 0;
-  @media screen and (max-width: 1036px) {
+  @media (max-width: 1036px) {
     flex-direction: column-reverse;
   }
 
   .textWrapper {
     width: 65.999%;
     padding: 10px;
-    @media screen and (max-width: 1036px) {
+    @media (max-width: 1036px) {
       width: auto;
     }
   }
@@ -44,31 +44,31 @@
     &,
     .title,
     &.title span, {
-      @media screen and (max-width: 1302px) {
+      @media (max-width: 1302px) {
         font-size: 50px;
       }
 
-      @media screen and (max-width: 1187px) {
+      @media (max-width: 1187px) {
         font-size: 45px;
       }
 
-      @media screen and (max-width: 1072px) {
+      @media (max-width: 1072px) {
         font-size: 42px;
       }
 
-      @media screen and (max-width: 1036px) {
+      @media (max-width: 1036px) {
         line-height: 1.2;
       }
 
-      @media screen and (max-width: 662px) {
+      @media (max-width: 662px) {
         font-size: 40px;
         line-height: 50px;
       }
-      @media screen and (max-width: 630px) {
+      @media (max-width: 630px) {
         font-size: 30px;
         line-height: 40px;
       }
-      @media screen and (max-width: 480px) {
+      @media (max-width: 480px) {
         font-size: 24px;
       }
     }
@@ -111,7 +111,7 @@
       vertical-align: middle;
     }
 
-    @media screen and (max-width: 1036px) {
+    @media (max-width: 1036px) {
       width: 98%;
       justify-content: center;
       margin-bottom: 10px;

@@ -34,8 +34,12 @@
       padding: 20px;
       background-color: $primaryBgColor;
       border-radius: $borderRadius;
-      width: 600px;
+      width: 50%;
       margin: 0 auto;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
 
       .inputGroup {
         display: flex;
