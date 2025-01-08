@@ -118,11 +118,17 @@
         color: $textColor;
         font-size: 24px;
         font-weight: 600;
+        @media (max-width: 580px){
+          font-size: 16px;
+        }
       }
 
       span {
         color: $TextColorSecond;
         font-size: 28px;
+        @media (max-width: 580px){
+          font-size: 18px;
+        }
       }
 
       .socialICons {
@@ -134,6 +140,11 @@
         img {
           width: 64px;
           height: 64px;
+
+          @media (max-width: 316px) {
+            width: 52px;
+            height: 52px;
+          }
 
           &:hover {
             transform: translateY(-5px);

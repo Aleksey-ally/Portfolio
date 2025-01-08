@@ -7,6 +7,9 @@
 
   p {
     @include text(null, 18px, 1.9, null, #878e99);
+    @media (max-width: 452px){
+      font-size: 16px;
+    }
   }
 
   &::before {
