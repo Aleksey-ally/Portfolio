@@ -16,46 +16,48 @@
   "skillsBlock": {
     "subtitle": "Features",
     "title": "Skills",
-    "skills": [
-      {
+    "skills": {
+      "react": {
         "title": "React",
         "description": "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
       },
-      {
+      "chatGPT": {
         "title": "ChatGPT",
         "description": "ChatGPT is a conversational AI model developed by OpenAI based on the Generative Pretrained Transformer 3 (GPT-3) architecture."
       },
-      {
+      "restApi": {
         "title": "REST API",
         "description": "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
       },
-      {
+      "redux": {
         "title": "Redux",
         "description": "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
       },
-      {
+      "mobx": {
         "title": "Mobx",
         "description": "MobX is a state management library for JavaScript applications. It provides a simple and scalable way to manage the state of your application and keep it in sync with the user interface."
       }
-    ]
+    }
   },
+
   "projectsBlock": {
     "subtitle": "Visit my projects",
     "title": "Projects",
-    "projects": [
-      {
+    "projects": {
+      "todoList": {
         "title": "TodoList",
         "description": "Stack: TypeScript, React, Redux toolkit, Redux-Thunk, React Router DOM, Axios, Formik, MUI, Storybook"
       },
-      {
+      "socialNetwork": {
         "title": "Social Network",
         "description": "Stack: TypeScript, React, React Router DOM"
       },
-      {
+      "cats": {
         "title": "Cats",
         "description": "Cats (also known as the domestic cat or house cat to distinguish it from other felids), is a small domesticated carnivorous mammal that is valued by humans for its companionship and its ability to hunt vermin and household pests."
       }
-    ]
+    }
+
   },
   "contactBlock": {
     "subtitle": "Contact",
@@ -66,6 +68,8 @@
       "message": "Your Message",
       "button": "Send Message"
     },
+    "success": "Your message has been sent",
+    "error": "This field is required",
     "info": "Or contact me in a way more convenient for you"
   },
   "footer": {

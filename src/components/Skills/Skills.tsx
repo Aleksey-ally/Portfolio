@@ -3,40 +3,47 @@ import {Skill} from './Skill/Skill';
 import {Title} from "common/components/title/Title";
 import {Fade} from "react-awesome-reveal";
 import {ReactNode} from "react";
+import {useTranslation} from "react-i18next";
 
 type SkillsType = {
     title: string
     description: string
 }
 
-const skills: SkillsType[] = [
-
-    {
-        title: "React",
-        description: "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
-    },
-    {
-        title: "ChatGPT",
-        description: "ChatGPT is a conversational AI model developed by OpenAI based on the Generative Pretrained Transformer 3 (GPT-3) architecture."
-    },
-    {
-        title: "REST API",
-        description: "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
-    },
-    {
-        title: "Redux",
-        description: "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
-    },
-    {
-        title: "Mobx",
-        description: "MobX is a state management library for JavaScript applications. It provides a simple and scalable way to manage the state of your application and keep it in sync with the user interface."
-    },
-]
-
 export const Skills = () => {
+
+    const {t} = useTranslation();
+//@ts-ignore
+
+    const skills: SkillsType[] = [
+
+        {
+            title: t("skillsBlock.skills.react.title"),
+            description: t("skillsBlock.skills.react.description")
+        },
+        {
+            title: t("skillsBlock.skills.chatGPT.title"),
+            description: t("skillsBlock.skills.chatGPT.description")
+        },
+        {
+            title: t("skillsBlock.skills.restApi.title"),
+            description: t("skillsBlock.skills.restApi.description")
+        },
+        {
+            title: t("skillsBlock.skills.redux.title"),
+            description: t("skillsBlock.skills.redux.description")
+        },
+        {
+            title: t("skillsBlock.skills.mobx.title"),
+            description: t("skillsBlock.skills.mobx.description")
+        },
+    ]
+//@ts-ignore
+
+
     return (
         <div className={s.skillsBlock}>
-            <Title className={s.title} subtitle="Features" title="Skills"/>
+            <Title className={s.title} subtitle={t("skillsBlock.subtitle")} title={t("skillsBlock.title")}/>
             <div className={s.skills}>
                 <Fade cascade damping={0.2} direction={"top-left"} triggerOnce>
                     {skills.map((s, index) => {
