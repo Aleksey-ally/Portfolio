@@ -1,15 +1,17 @@
 import s from './Skill.module.scss';
+import {ReactNode} from "react";
 
 type SkillType = {
   title: string;
   description: string;
+  icon: ReactNode
 };
 
-export const Skill = ({ title, description }: SkillType) => {
+export const Skill = ({ title, description, icon }: SkillType) => {
   return (
     <div className={s.skillContainer}>
       <div className={s.skill}>
-        <div className={s.iconBox}><img className={s.icon} src="https://img.icons8.com/?size=512&id=bzf0DqjXFHIW&format=png" alt="#" /></div>
+        <div className={s.iconBox}>{icon}</div>
         <h3 className={s.title}>{title}</h3>
         <p className={s.description}>{description}</p>
       </div>

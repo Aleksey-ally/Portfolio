@@ -19,27 +19,66 @@
     "skills": {
       "react": {
         "title": "React",
-        "description": "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
+        "description": "React is a library for creating interactive user interfaces using components and a virtual DOM to improve performance."
       },
-      "chatGPT": {
-        "title": "ChatGPT",
-        "description": "ChatGPT is a conversational AI model developed by OpenAI based on the Generative Pretrained Transformer 3 (GPT-3) architecture."
+      "js": {
+        "title": "JS",
+        "description": "JavaScript is a versatile programming language used to create dynamic and interactive content on websites, allowing updates to occur in real-time without page reloads."
       },
-      "restApi": {
-        "title": "REST API",
-        "description": "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
+      "ts": {
+        "title": "TS",
+        "description": "TypeScript is a superset of JavaScript that adds static typing, helping to catch errors during development and improving code support in large projects."
       },
       "redux": {
         "title": "Redux",
-        "description": "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components."
+        "description": "Redux is a library for state management in JavaScript applications. It helps manage the application state in a centralized store, making state changes predictable and simplifying debugging."
       },
-      "mobx": {
-        "title": "Mobx",
-        "description": "MobX is a state management library for JavaScript applications. It provides a simple and scalable way to manage the state of your application and keep it in sync with the user interface."
+      "reduxToolkit": {
+        "title": "Redux Toolkit",
+        "description": "Redux Toolkit is a set of tools to simplify working with Redux. It provides convenient functions and methods to speed up development, improve code, and reduce boilerplate code."
+      },
+      "axios": {
+        "title": "Axios",
+        "description": "Axios is a promise-based JavaScript library used for making HTTP requests, such as fetching data from APIs. It simplifies working with asynchronous code and handles requests and responses efficiently."
+      },
+      "git": {
+        "title": "Git",
+        "description": "Git is a distributed version control system that allows tracking changes in code and collaborating on projects."
+      },
+      "storybook": {
+        "title": "Storybook",
+        "description": "Storybook is an open-source tool for building and testing UI components in isolation. It allows developers to create, view, and test components independently from the main application."
+      },
+      "html": {
+        "title": "HTML",
+        "description": "HyperText Markup Language is the standard markup language for creating web pages, describing the structure and content of documents on the internet."
+      },
+      "css": {
+        "title": "CSS",
+        "description": "Cascading Style Sheets is a style sheet language used to describe the presentation and layout of HTML documents, such as fonts, colors, and spacing."
+      },
+      "sass": {
+        "title": "SASS",
+        "description": "Syntactically Awesome Stylesheets is a CSS preprocessor that adds extra features like variables, nested rules, and mixins to improve and speed up the process of writing styles."
+      },
+      "rhf": {
+        "title": "React Hook Form",
+        "description": "React Hook Form is a library for managing forms in React, which simplifies validation and data handling with minimal re-renders and high performance."
+      },
+      "rrd": {
+        "title": "React Router Dom",
+        "description": "React Router DOM is a library for handling navigation and routing in React web applications, allowing users to switch between different pages based on the URL."
+      },
+      "mui": {
+        "title": "Material UI",
+        "description": "Material UI is a component library for React that implements Google Material Design, providing ready-to-use and customizable UI elements for building beautiful and functional web applications."
+      },
+      "rAPI": {
+        "title": "Rest API",
+        "description": "Representational State Transfer Application Programming Interface is an architectural style for creating web services that use HTTP requests to interact between the client and the server, working with resources in the form of URLs."
       }
     }
   },
-
   "projectsBlock": {
     "subtitle": "Visit my projects",
     "title": "Projects",
@@ -57,7 +96,6 @@
         "description": "Cats (also known as the domestic cat or house cat to distinguish it from other felids), is a small domesticated carnivorous mammal that is valued by humans for its companionship and its ability to hunt vermin and household pests."
       }
     }
-
   },
   "contactBlock": {
     "subtitle": "Contact",
