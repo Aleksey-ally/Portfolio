@@ -467,8 +467,6 @@ export const Skills = () => {
                     }) as ReactNode}
                 </Fade>
             </div>
-
-
         </div>
     );
 };
