@@ -1,4 +1,5 @@
 import s from './Projects.module.scss';
+import FlashCards from 'assets/images/FlashCards.webp'
 import {Project} from './Project/Project';
 import imgTodoList from '../../assets/images/TodoList.png'
 import imgSocialNetwork from '../../assets/images/SocialNetwork.jpg'
@@ -11,6 +12,7 @@ type ProjectsType = {
     title: string
     description: string
     imgSrc: string
+    link: string
 }
 
 
@@ -21,20 +23,26 @@ export const Projects = () => {
 
     const projects: ProjectsType[] = [
         {
-            imgSrc: imgTodoList,
-            title: t("projectsBlock.projects.todoList.title"),
-            description: t("projectsBlock.projects.todoList.description")
+            imgSrc: FlashCards,
+            title: t("projectsBlock.projects.cards.title"),
+            description: t("projectsBlock.projects.cards.description"),
+            link: "https://flash-cards-liard.vercel.app"
+
         },
         {
             imgSrc: imgSocialNetwork,
             title: t("projectsBlock.projects.socialNetwork.title"),
-            description: t("projectsBlock.projects.socialNetwork.description")
+            description: t("projectsBlock.projects.socialNetwork.description"),
+            link: "https://social-network-seven-drab.vercel.app"
+
         },
         {
-            imgSrc: "https://avatanplus.com/files/resources/mid/5a85ac6ddd1d81619a298d52.png",
-            title: t("projectsBlock.projects.cats.title"),
-            description: t("projectsBlock.projects.cats.description")
+            imgSrc: imgTodoList,
+            title: t("projectsBlock.projects.todoList.title"),
+            description: t("projectsBlock.projects.todoList.description"),
+            link: "https://todolist-tan-psi.vercel.app"
         },
+
     ]
 //@ts-ignore
 
@@ -44,7 +52,8 @@ export const Projects = () => {
             <div className={s.projects}>
                 <Fade cascade={true} damping={0.2} direction={"top-left"} triggerOnce>
                     {projects.map((p, index) => {
-                        return <Project key={index} title={p.title} description={p.description} imgSrc={p.imgSrc}/>
+                        return <Project key={index} title={p.title} description={p.description} imgSrc={p.imgSrc}
+                                        link={p.link}/>
                     }) as ReactNode}
                 </Fade>
 

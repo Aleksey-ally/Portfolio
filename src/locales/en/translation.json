@@ -85,15 +85,15 @@
     "projects": {
       "todoList": {
         "title": "TodoList",
-        "description": "Stack: TypeScript, React, Redux toolkit, Redux-Thunk, React Router DOM, Axios, Formik, MUI, Storybook"
+        "description": "Stack: TypeScript, React, React Router Dom, React DND, Redux, Redux Thunk, Redux Toolkit, Axios, CSS, Material UI, Emotion React, Git, Jest, Uuid, Formik."
       },
       "socialNetwork": {
         "title": "Social Network",
-        "description": "Stack: TypeScript, React, React Router DOM"
+        "description": "Stack:  TypeScript, React, Redux, Redux Thunk, SCSS, Grid, Radix UI, React Hook Form, React Router Dom, Toastify, Git, Jest, React i18next, Ant Design, Axios."
       },
-      "cats": {
-        "title": "Cats",
-        "description": "Cats (also known as the domestic cat or house cat to distinguish it from other felids), is a small domesticated carnivorous mammal that is valued by humans for its companionship and its ability to hunt vermin and household pests."
+      "cards": {
+        "title": "Flash Cards",
+        "description": "Stack: TypeScript, React, Redux, Redux Toolkit, RTK Query, Vite, Storybook,\n SCSS, Radix UI, React Hook Form, React Router Dom, Zod, Toastify, Git"
       }
     }
   },
