@@ -12,7 +12,8 @@ type ProjectsType = {
     title: string
     description: string
     imgSrc: string
-    link: string
+    deployLink: string
+    gitLink: string
 }
 
 
@@ -26,21 +27,24 @@ export const Projects = () => {
             imgSrc: FlashCards,
             title: t("projectsBlock.projects.cards.title"),
             description: t("projectsBlock.projects.cards.description"),
-            link: "https://flash-cards-liard.vercel.app"
+            deployLink: "https://flash-cards-liard.vercel.app",
+            gitLink:"https://github.com/Aleksey-ally/FlashCards"
 
         },
         {
             imgSrc: imgSocialNetwork,
             title: t("projectsBlock.projects.socialNetwork.title"),
             description: t("projectsBlock.projects.socialNetwork.description"),
-            link: "https://social-network-seven-drab.vercel.app"
+            deployLink: "https://social-network-seven-drab.vercel.app",
+            gitLink:"https://github.com/Aleksey-ally/Social-Network"
 
         },
         {
             imgSrc: imgTodoList,
             title: t("projectsBlock.projects.todoList.title"),
             description: t("projectsBlock.projects.todoList.description"),
-            link: "https://todolist-tan-psi.vercel.app"
+            deployLink: "https://todolist-tan-psi.vercel.app",
+            gitLink:"https://github.com/Aleksey-ally/Todolist"
         },
 
     ]
@@ -53,7 +57,7 @@ export const Projects = () => {
                 <Fade cascade={true} damping={0.2} direction={"top-left"} triggerOnce>
                     {projects.map((p, index) => {
                         return <Project key={index} title={p.title} description={p.description} imgSrc={p.imgSrc}
-                                        link={p.link}/>
+                                        deployLink={p.deployLink} gitLink={p.gitLink}/>
                     }) as ReactNode}
                 </Fade>
 

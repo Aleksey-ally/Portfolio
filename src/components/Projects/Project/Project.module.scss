@@ -27,23 +27,43 @@
   .iconWrapper {
     position: relative;
 
-    .icon {
+    .iconDeploy {
       position: absolute;
       z-index: 1;
       top: 12px;
       right: 12px;
-      opacity: 0.8;
-      pointer-events: none;
 
       &:before {
         content: '';
         display: inline-block;
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
         background-image: url('../../../assets/svg/externalLink.svg');
         background-size: cover;
         background-position: center;
-
+        transition: transform 0.3s ease;
+      }
+      &:hover:before {
+        transform: scale(1.5);
+      }
+    }
+    .iconGitHub {
+      position: absolute;
+      z-index: 1;
+      top: 50px;
+      right: 12px;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url('../../../assets/svg/githubProjects.svg');
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s ease;
+      }
+      &:hover:before {
+        transform: scale(1.5);
       }
     }
   }
