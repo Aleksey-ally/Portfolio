@@ -1,6 +1,26 @@
 @import '../../../common/styles/sass/variables.scss';
 @import '../../../common/styles/sass/mixins.scss';
 
+@mixin iconBase($image) {
+  position: absolute;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url($image);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover:before {
+    transform: scale(1.5);
+  }
+}
+
 .project {
   @include boxShadow();
   display: flex;
@@ -28,43 +48,14 @@
     position: relative;
 
     .iconDeploy {
-      position: absolute;
-      z-index: 1;
+      @include iconBase('../../../assets/svg/externalLink.svg');
       top: 12px;
       right: 12px;
-
-      &:before {
-        content: '';
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        background-image: url('../../../assets/svg/externalLink.svg');
-        background-size: cover;
-        background-position: center;
-        transition: transform 0.3s ease;
-      }
-      &:hover:before {
-        transform: scale(1.5);
-      }
     }
     .iconGitHub {
-      position: absolute;
-      z-index: 1;
+      @include iconBase('../../../assets/svg/githubProjects.svg');
       top: 50px;
       right: 12px;
-      &:before {
-        content: '';
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        background-image: url('../../../assets/svg/githubProjects.svg');
-        background-size: cover;
-        background-position: center;
-        transition: transform 0.3s ease;
-      }
-      &:hover:before {
-        transform: scale(1.5);
-      }
     }
   }
 
