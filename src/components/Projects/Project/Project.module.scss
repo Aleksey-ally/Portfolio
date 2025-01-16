@@ -57,6 +57,11 @@
       top: 50px;
       right: 12px;
     }
+    .iconStorybook{
+      @include iconBase('../../../assets/svg/storybook.svg');
+      top: 85px;
+      right: 12px;
+    }
   }
 
   .iconAndImg {

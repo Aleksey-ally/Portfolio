@@ -14,6 +14,7 @@ type ProjectsType = {
     imgSrc: string
     deployLink: string
     gitLink: string
+    storyLink?: string
 }
 
 
@@ -28,25 +29,23 @@ export const Projects = () => {
             title: t("projectsBlock.projects.cards.title"),
             description: t("projectsBlock.projects.cards.description"),
             deployLink: "https://flash-cards-liard.vercel.app",
-            gitLink:"https://github.com/Aleksey-ally/FlashCards"
-
+            gitLink: "https://github.com/Aleksey-ally/FlashCards",
+            storyLink: "https://flash-cards-git-storybook-deploy-alekseys-projects-253ce9e7.vercel.app"
         },
         {
             imgSrc: imgSocialNetwork,
             title: t("projectsBlock.projects.socialNetwork.title"),
             description: t("projectsBlock.projects.socialNetwork.description"),
             deployLink: "https://social-network-seven-drab.vercel.app",
-            gitLink:"https://github.com/Aleksey-ally/Social-Network"
-
+            gitLink: "https://github.com/Aleksey-ally/Social-Network"
         },
         {
             imgSrc: imgTodoList,
             title: t("projectsBlock.projects.todoList.title"),
             description: t("projectsBlock.projects.todoList.description"),
             deployLink: "https://todolist-tan-psi.vercel.app",
-            gitLink:"https://github.com/Aleksey-ally/Todolist"
+            gitLink: "https://github.com/Aleksey-ally/Todolist"
         },
-
     ]
 //@ts-ignore
 
@@ -57,7 +56,7 @@ export const Projects = () => {
                 <Fade cascade={true} damping={0.2} direction={"top-left"} triggerOnce>
                     {projects.map((p, index) => {
                         return <Project key={index} title={p.title} description={p.description} imgSrc={p.imgSrc}
-                                        deployLink={p.deployLink} gitLink={p.gitLink}/>
+                                        deployLink={p.deployLink} gitLink={p.gitLink} storyLink={p.storyLink}/>
                     }) as ReactNode}
                 </Fade>
 
