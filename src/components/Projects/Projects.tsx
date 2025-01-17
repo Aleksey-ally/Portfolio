@@ -3,6 +3,7 @@ import FlashCards from 'assets/images/FlashCards.webp'
 import {Project} from './Project/Project';
 import imgTodoList from '../../assets/images/TodoList.png'
 import imgSocialNetwork from '../../assets/images/SocialNetwork.jpg'
+import imgWeather from '../../assets/images/Weather.png'
 import {Title} from "common/components/title/Title";
 import {Fade} from "react-awesome-reveal";
 import {ReactNode} from "react";
@@ -33,6 +34,13 @@ export const Projects = () => {
             storyLink: "https://flash-cards-git-storybook-deploy-alekseys-projects-253ce9e7.vercel.app"
         },
         {
+            imgSrc: imgWeather,
+            title: t("projectsBlock.projects.weather.title"),
+            description: t("projectsBlock.projects.weather.description"),
+            deployLink: "https://weather-forecast-liard-tau.vercel.app",
+            gitLink: "https://github.com/Aleksey-ally/Weather-forecast"
+        },
+        {
             imgSrc: imgSocialNetwork,
             title: t("projectsBlock.projects.socialNetwork.title"),
             description: t("projectsBlock.projects.socialNetwork.description"),
@@ -45,7 +53,7 @@ export const Projects = () => {
             description: t("projectsBlock.projects.todoList.description"),
             deployLink: "https://todolist-tan-psi.vercel.app",
             gitLink: "https://github.com/Aleksey-ally/Todolist"
-        },
+        }
     ]
 //@ts-ignore
 

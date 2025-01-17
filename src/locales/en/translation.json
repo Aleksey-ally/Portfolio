@@ -93,7 +93,11 @@
       },
       "cards": {
         "title": "Flash Cards",
-        "description": "Stack: TypeScript, React, Redux, Redux Toolkit, RTK Query, Vite, Storybook,\n SCSS, Radix UI, React Hook Form, React Router Dom, Zod, Toastify, Git"
+        "description": "Stack: TypeScript, React, Redux, Redux Toolkit, RTK Query, Vite, Storybook, SCSS, Radix UI, React Hook Form, React Router Dom, Zod, Toastify, Git"
+      },
+      "weather": {
+        "title": "Weather Forecast",
+        "description": "Stack: TypeScript, React, Vite, Axios, SASS (SCSS), i18next, Git"
       }
     }
   },
