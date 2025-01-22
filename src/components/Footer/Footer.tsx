@@ -5,8 +5,8 @@ export const Footer = () => {
     const {t} = useTranslation();
 //@ts-ignore
     return (
-        <div className={s.footerBlock}>
+        <footer className={s.footerBlock}>
             <p>{t("footer.info")}</p>
-        </div>
+        </footer>
     );
 };

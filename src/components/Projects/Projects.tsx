@@ -58,7 +58,7 @@ export const Projects = () => {
 //@ts-ignore
 
     return (
-        <div id={'projects'} className={s.projectsBlock}>
+        <section id={'projects'} className={s.projectsBlock}>
             <Title subtitle={t("projectsBlock.subtitle")} title={t("projectsBlock.title")}/>
             <div className={s.projects}>
                 <Fade cascade={true} damping={0.2} direction={"top-left"} triggerOnce>
@@ -69,6 +69,6 @@ export const Projects = () => {
                 </Fade>
 
             </div>
-        </div>
+        </section>
     );
 };

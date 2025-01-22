@@ -52,7 +52,7 @@ export const Contacts = () => {
 //@ts-ignore
 
     return (
-        <div className={s.contactsBlock}>
+        <section className={s.contactsBlock}>
             <Title className={s.title} subtitle={t("contactBlock.subtitle")} title={t("contactBlock.title")}/>
             <div className={s.container}>
 
@@ -94,6 +94,6 @@ export const Contacts = () => {
                 </div>
             </div>
             <ToastContainer/>
-        </div>
+        </section>
     );
 };

@@ -458,7 +458,7 @@ export const Skills = () => {
 
 //@ts-ignore
     return (
-        <div className={s.skillsBlock}>
+        <section className={s.skillsBlock}>
             <Title className={s.title} subtitle={t("skillsBlock.subtitle")} title={t("skillsBlock.title")}/>
             <div className={s.skills}>
                 <Fade cascade damping={0.2} direction={"top-left"} triggerOnce>
@@ -467,6 +467,6 @@ export const Skills = () => {
                     }) as ReactNode}
                 </Fade>
             </div>
-        </div>
+        </section>
     );
 };

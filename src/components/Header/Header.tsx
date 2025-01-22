@@ -17,8 +17,8 @@ export const Header = () => {
         };
     }, [isSticky]);
     return (
-        <div className={`${s.header} ${isSticky ? s.sticky : ""}`}>
+        <header className={`${s.header} ${isSticky ? s.sticky : ""}`}>
             <Nav/>
-        </div>
+        </header>
     );
 };
