@@ -84,11 +84,11 @@
     "title": "Projects",
     "projects": {
       "todoList": {
-        "title": "TodoList",
+        "title": "PlanWise",
         "description": "Stack: TypeScript, React, React Router Dom, React DND, Redux, Redux Thunk, Redux Toolkit, Axios, CSS, Material UI, Emotion React, Git, Jest, Uuid, Formik."
       },
       "socialNetwork": {
-        "title": "Social Network",
+        "title": "Connectopia",
         "description": "Stack:  TypeScript, React, Redux, Redux Thunk, SCSS, Grid, Radix UI, React Hook Form, React Router Dom, Toastify, Git, Jest, React i18next, Ant Design, Axios."
       },
       "cards": {

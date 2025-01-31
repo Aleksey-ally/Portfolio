@@ -84,19 +84,19 @@
     "title": "Проекты",
     "projects": {
       "todoList": {
-        "title": "Список дел",
+        "title": "PlanWise",
         "description": "Стек: TypeScript, React, React Router Dom, React DND, Redux, Redux Thunk, Redux Toolkit, Axios, CSS, Material UI, Emotion React, Git, Jest, Uuid, Formik."
       },
       "socialNetwork": {
-        "title": "Социальная сеть",
+        "title": "Connectopia",
         "description": "Стек:  TypeScript, React, Redux, Redux Thunk, SCSS, Grid, Radix UI, React Hook Form, React Router Dom, Toastify, Git, Jest, React i18next, Ant Design, Axios."
       },
       "cards": {
-        "title": "Карточки (Знаю / Не знаю) ",
+        "title": "Flash Cards",
         "description": "Стек: TypeScript, React, React Router DOM TypeScript, React, Redux, Redux Toolkit, RTK Query, Vite, Storybook,\n SCSS, Radix UI, React Hook Form, React Router Dom, Zod, Toastify, Git"
       },
       "weather": {
-        "title": "Прогноз погоды",
+        "title": "Weather Forecast",
         "description": "Стек: TypeScript, React, Vite, Axios, SASS (SCSS), i18next, Git"
       }
     }
