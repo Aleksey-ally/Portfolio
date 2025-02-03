@@ -19,14 +19,10 @@ const App = () => {
                 <Main/>
             </Element>
 
-
-            <Fade direction={"top-left"} triggerOnce>
+            <Fade direction={"down"} triggerOnce>
                 <Element name={"Skills"}>
                     <Skills/>
                 </Element>
-            </Fade>
-
-            <Fade direction={"down"} triggerOnce>
                 <Element name={"Projects"}>
                     <Projects/>
                 </Element>
