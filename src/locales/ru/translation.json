@@ -73,7 +73,7 @@
         "title": "Material UI",
         "description": "Material UI — это библиотека компонентов для React, которая реализует Google Material Design, предлагая готовые и настраиваемые UI-элементы для создания красивых и функциональных веб-приложений."
       },
-      "rAPI": {
+      "restAPI": {
         "title": "Rest API",
         "description": "Representational State Transfer Application Programming Interface — это архитектурный стиль для создания веб-сервисов, который использует HTTP-запросы для взаимодействия между клиентом и сервером, работая с ресурсами в виде URL-адресов."
       }
